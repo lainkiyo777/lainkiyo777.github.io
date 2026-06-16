@@ -191,4 +191,4 @@ filterButtons.forEach((button) => {
 searchInput?.addEventListener("input", filterNotes);
 
 applyTheme(localStorage.getItem("blog-theme") || "light");
-applyLanguage(localStorage.getItem("blog-lang") || "zh");
+applyLanguage(localStorage.getItem("blog-lang") || "en");
