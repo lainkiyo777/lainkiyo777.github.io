@@ -239,7 +239,16 @@ button {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center 30%;
   background: var(--surface-strong);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 20px rgba(58, 51, 42, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(58, 51, 42, 0.15);
 }
 
 .profile-row {
@@ -383,6 +392,16 @@ button {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.focus-card:hover,
+.project-card:hover,
+.note-card:hover,
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58, 51, 42, 0.1);
+  border-color: color-mix(in srgb, var(--accent), transparent 60%);
 }
 
 .focus-card {
@@ -534,6 +553,20 @@ button {
   display: none !important;
 }
 
+.coming-soon {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 10px;
+  color: var(--muted);
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .about-section {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
@@ -641,5 +674,22 @@ button {
 
   .stat-grid dd {
     font-size: 19px;
+  }
+
+  .profile-panel {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    aspect-ratio: 16 / 9;
+    object-position: center center;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .project-meta {
+    flex-wrap: wrap;
   }
 }
