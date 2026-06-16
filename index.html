@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="林启煜的个人博客，记录研究、工程实践、阅读和长期项目。"
+    />
+    <title>林启煜 | Personal Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">LQ</span>
+        <span>林启煜</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#writing" data-i18n="navWriting">文章</a>
+        <a href="#projects" data-i18n="navProjects">项目</a>
+        <a href="#now" data-i18n="navNow">近况</a>
+        <a href="#about" data-i18n="navAbout">关于</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <div class="lang-switch" aria-label="Language">
+          <button class="active" type="button" data-lang="zh">中</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Personal Blog · Research Notes · Building Log</p>
+          <h1 data-i18n="heroTitle">林启煜</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            这里放你的长期身份：研究兴趣、工程方向、正在构建的产品，和你愿意持续公开记录的思考。
+          </p>
+          <div class="hero-links" aria-label="Social links">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/yourname">GitHub</a>
+            <a href="https://x.com/yourname">X</a>
+            <a href="https://scholar.google.com/">Scholar</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile overview">
+          <img
+            class="hero-image"
+            src="assets/cover.png"
+            alt="A quiet desk with notes, books, and a laptop for writing"
+          />
+          <div class="profile-row">
+            <div class="avatar" aria-hidden="true">LQ</div>
+            <div>
+              <strong data-i18n="profileName">Lin Qiyu</strong>
+              <p data-i18n="profileLine">AI builder / independent notes</p>
+            </div>
+          </div>
+          <dl class="stat-grid">
+            <div>
+              <dt data-i18n="statArticles">Articles</dt>
+              <dd>12</dd>
+            </div>
+            <div>
+              <dt data-i18n="statProjects">Projects</dt>
+              <dd>4</dd>
+            </div>
+            <div>
+              <dt data-i18n="statSince">Since</dt>
+              <dd>2026</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section section-split" id="now">
+        <div>
+          <p class="section-kicker" data-i18n="nowKicker">Now</p>
+          <h2 data-i18n="nowTitle">最近在做什么</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2026</time>
+            <div>
+              <h3 data-i18n="nowItem1Title">构建个人知识与 Agent 工具链</h3>
+              <p data-i18n="nowItem1Body">
+                把微信记录、读书笔记、代码项目和论文理解整理成可检索、可复用的个人系统。
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2025 - 2026</time>
+            <div>
+              <h3 data-i18n="nowItem2Title">研究 AI 应用与长期学习方法</h3>
+              <p data-i18n="nowItem2Body">
+                关注大模型工具、RAG、个人效率系统，以及如何把想法变成可持续迭代的产品。
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time data-i18n="nowItem3Time">长期</time>
+            <div>
+              <h3 data-i18n="nowItem3Title">写作、实验、复盘</h3>
+              <p data-i18n="nowItem3Body">
+                这个博客会沉淀公开笔记：技术细节、项目复盘、论文阅读和个人观察。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="focusKicker">Focus</p>
+          <h2 id="focus-title" data-i18n="focusTitle">关注方向</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span>AI</span>
+            <h3 data-i18n="focus1Title">AI Agents</h3>
+            <p data-i18n="focus1Body">从提示词、工作流、工具调用到长期记忆，记录能实际落地的 Agent 系统。</p>
+          </article>
+          <article class="focus-card">
+            <span>RAG</span>
+            <h3 data-i18n="focus2Title">Knowledge Systems</h3>
+            <p data-i18n="focus2Body">个人数据、检索增强、知识库和可追溯问答的工程实践。</p>
+          </article>
+          <article class="focus-card">
+            <span>LAB</span>
+            <h3 data-i18n="focus3Title">Product Experiments</h3>
+            <p data-i18n="focus3Body">把小想法快速做成可用原型，验证再迭代。</p>
+          </article>
+          <article class="focus-card">
+            <span>LOG</span>
+            <h3 data-i18n="focus4Title">Thinking in Public</h3>
+            <p data-i18n="focus4Body">用公开写作逼迫自己把问题、证据和判断说清楚。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="writing">
+        <div>
+          <p class="section-kicker" data-i18n="writingKicker">Writing</p>
+          <h2 data-i18n="writingTitle">精选文章</h2>
+          <p class="section-note" data-i18n="writingNote">
+            先放三篇样例，之后可以改成真实文章链接或 Markdown 生成的页面。
+          </p>
+        </div>
+        <div class="article-list">
+          <article class="article-card">
+            <div>
+              <time>2026.06.16</time>
+              <span class="pill">New</span>
+            </div>
+            <h3>
+              <a href="#" data-i18n="article1Title">如何搭建一个长期可维护的个人博客</a>
+            </h3>
+            <p data-i18n="article1Body">从主页定位、内容栏目、部署方式到写作节奏，记录这个站点的第一版设计。</p>
+          </article>
+          <article class="article-card">
+            <div>
+              <time>2026.05.28</time>
+              <span class="pill">AI</span>
+            </div>
+            <h3>
+              <a href="#" data-i18n="article2Title">把聊天记录变成个人知识系统</a>
+            </h3>
+            <p data-i18n="article2Body">RAG、向量索引和人物画像如何组合成一个真正有用的私人工作台。</p>
+          </article>
+          <article class="article-card">
+            <div>
+              <time>2026.04.12</time>
+              <span class="pill">Note</span>
+            </div>
+            <h3>
+              <a href="#" data-i18n="article3Title">一篇论文应该如何精读</a>
+            </h3>
+            <p data-i18n="article3Body">把论文拆成问题、方法、实验、局限和可迁移启发，形成可复用模板。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="projectsKicker">Projects</p>
+          <h2 data-i18n="projectsTitle">项目与实验</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Web</span>
+              <span>2026</span>
+            </div>
+            <h3 data-i18n="project1Title">Personal Blog</h3>
+            <p data-i18n="project1Body">一个轻量、可部署、可持续写作的个人主页模板。</p>
+            <a href="#" data-i18n="projectLink">View project</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>AI</span>
+              <span>RAG</span>
+            </div>
+            <h3 data-i18n="project2Title">Persona Workbench</h3>
+            <p data-i18n="project2Body">把个人聊天数据整理成可查询、可分析、可复盘的交互系统。</p>
+            <a href="#" data-i18n="projectLink2">View project</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Notes</span>
+              <span>Reading</span>
+            </div>
+            <h3 data-i18n="project3Title">Paper Reading System</h3>
+            <p data-i18n="project3Body">一套用于论文精读、问题追踪和跨论文知识沉淀的方法。</p>
+            <a href="#" data-i18n="projectLink3">View project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section notes-section" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="notesKicker">Notebook</p>
+          <h2 id="notes-title" data-i18n="notesTitle">全部笔记</h2>
+        </div>
+        <div class="notes-toolbar">
+          <input
+            id="noteSearch"
+            type="search"
+            autocomplete="off"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="搜索标题、摘要或标签"
+          />
+          <div class="tag-filter" aria-label="Filter notes">
+            <button class="active" type="button" data-filter="all" data-i18n="filterAll">全部</button>
+            <button type="button" data-filter="AI">AI</button>
+            <button type="button" data-filter="Build">Build</button>
+            <button type="button" data-filter="Reading" data-i18n="filterReading">阅读</button>
+          </div>
+        </div>
+        <div class="note-grid" id="noteGrid">
+          <article class="note-card" data-tags="AI Build">
+            <span>AI · Build</span>
+            <h3 data-i18n="note1Title">为什么个人博客仍然值得做</h3>
+            <p data-i18n="note1Body">社交媒体负责传播，个人博客负责沉淀、组织和长期可信的表达。</p>
+          </article>
+          <article class="note-card" data-tags="AI Reading">
+            <span>AI · Reading</span>
+            <h3 data-i18n="note2Title">读论文时先找问题定义</h3>
+            <p data-i18n="note2Body">如果没有先抓住问题定义，方法细节会变成一堆无法判断价值的术语。</p>
+          </article>
+          <article class="note-card" data-tags="Build">
+            <span>Build</span>
+            <h3 data-i18n="note3Title">先做可发布版本，再做内容管理系统</h3>
+            <p data-i18n="note3Body">早期博客最重要的是能发布、能维护、能表达清楚，而不是功能完整。</p>
+          </article>
+          <article class="note-card" data-tags="Reading">
+            <span>Reading</span>
+            <h3 data-i18n="note4Title">公开写作是一种思维压缩</h3>
+            <p data-i18n="note4Body">当读者不存在于脑内时，很多模糊判断会一直留在模糊状态。</p>
+          </article>
+        </div>
+        <p class="empty-state hidden" id="emptyState" data-i18n="emptyState">没有匹配的笔记。</p>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div>
+          <p class="section-kicker" data-i18n="aboutKicker">About</p>
+          <h2 data-i18n="aboutTitle">关于这个站点</h2>
+        </div>
+        <div class="about-copy">
+          <p data-i18n="aboutBody1">
+            这个页面借鉴了参考站点的「个人主页 + 研究/项目索引 + 博客入口」结构，但没有复制内容或视觉细节。它更适合中文个人博客：首屏说明你是谁，随后展示近况、关注方向、文章、项目和笔记。
+          </p>
+          <p data-i18n="aboutBody2">
+            你可以把这里改成真实履历、研究方向、社交链接和文章列表。后续如果想升级，可以接入 Markdown、Astro、Next.js 或 GitHub Actions 自动构建。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 林启煜</span>
+      <a href="#top" data-i18n="backTop">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
