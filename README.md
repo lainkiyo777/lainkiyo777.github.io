@@ -45,10 +45,4 @@ https://lainkiyo777.github.io/personal-blog/
 Settings -> Pages -> Build and deployment -> Source -> GitHub Actions
 ```
 
-之后把这些文件推送到 GitHub，工作流跑完后就能访问上面的地址。GitHub Pages 发布有时需要几分钟生效。
-
-当前仓库如果保持 private，GitHub Pages 是否可用取决于账号/仓库计划；如果部署失败，最直接的处理方式是把仓库改成 public。
-
-如果你想做成和 `https://victorchen96.github.io/` 一样不带仓库名的主页地址，需要新建一个名为 `lainkiyo777.github.io` 的仓库，并把博客文件放在那个仓库的根目录。
-
 如果后续想升级内容管理方式，可以接入 Astro/Next.js/Markdown 自动生成文章页。
