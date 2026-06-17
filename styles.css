@@ -311,6 +311,10 @@ button {
   border-color: color-mix(in srgb, var(--rust), transparent 45%);
 }
 
+.dog-list li:nth-child(3) {
+  border-color: color-mix(in srgb, var(--rust), transparent 58%);
+}
+
 .dog-list span {
   display: block;
   color: var(--ink);

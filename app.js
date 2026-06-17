@@ -11,8 +11,9 @@ const translations = {
     photoKicker: "Life Snapshot",
     photoTitle: "朋友家的狗狗们",
     photoIntro:
-      "左上角是金色边牧樱桃，左下角是活泼的金毛石榴；中间三只小边牧从左到右是乌乌、三七和饭饭。",
+      "左上角是金色边牧樱桃，右上角是老抽色金毛 Miko，左下角是活泼的金毛石榴；中间三只小边牧从左到右是乌乌、三七和饭饭。",
     dogCherry: "左上 · 金色边牧",
+    dogMiko: "右上 · 老抽色金毛",
     dogShiliu: "左下 · 活泼金毛",
     dogWuwu: "中间左 · 小边牧",
     dogSanqi: "中间 · 小边牧",
@@ -75,8 +76,9 @@ const translations = {
     photoKicker: "Life Snapshot",
     photoTitle: "Friends' dogs",
     photoIntro:
-      "Cherry, the golden Border Collie, is in the upper left. Shiliu, the lively Golden Retriever, is in the lower left. The three young Border Collies in the middle are Wuwu, Sanqi, and Fanfan from left to right.",
+      "Cherry, the golden Border Collie, is in the upper left. Miko, the dark-gold Golden Retriever, is in the upper right. Shiliu, the lively Golden Retriever, is in the lower left. The three young Border Collies in the middle are Wuwu, Sanqi, and Fanfan from left to right.",
     dogCherry: "Upper left · golden Border Collie",
+    dogMiko: "Upper right · dark-gold Golden Retriever",
     dogShiliu: "Lower left · lively Golden Retriever",
     dogWuwu: "Middle left · young Border Collie",
     dogSanqi: "Middle · young Border Collie",
