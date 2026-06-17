@@ -251,33 +251,74 @@ button {
   box-shadow: 0 8px 30px rgba(58, 51, 42, 0.15);
 }
 
-.profile-row {
+.dogs-story {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px;
-  align-items: center;
-  padding: 18px 18px 14px;
+  gap: 16px;
+  padding: 18px;
 }
 
-.avatar {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  color: #fffdf7;
-  background: linear-gradient(135deg, var(--accent-strong), var(--rust));
-  border-radius: 8px;
-  font-weight: 800;
+.photo-kicker {
+  margin: 0 0 4px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 780;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
-.profile-row strong {
-  display: block;
+.dogs-story h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 22px;
+  line-height: 1.18;
 }
 
-.profile-row p {
-  margin: 2px 0 0;
+.dogs-story p {
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.65;
+}
+
+.dog-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dog-list li {
+  min-width: 0;
+  padding: 9px 10px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.dog-list li:first-child {
+  border-color: color-mix(in srgb, var(--gold), transparent 45%);
+}
+
+.dog-list li:nth-child(2) {
+  border-color: color-mix(in srgb, var(--rust), transparent 45%);
+}
+
+.dog-list span {
+  display: block;
+  color: var(--ink);
+  font-weight: 780;
+  line-height: 1.2;
+}
+
+.dog-list small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
 }
 
 .stat-grid {
@@ -383,6 +424,10 @@ button {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .focus-card,
@@ -674,6 +719,10 @@ button {
 
   .stat-grid dd {
     font-size: 19px;
+  }
+
+  .dog-list {
+    grid-template-columns: 1fr;
   }
 
   .profile-panel {
